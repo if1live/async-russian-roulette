@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <h1>Asynchronous Russian Roulette</h1>
+
+  <img src="./images/screenshot.png" class="pure-img"></img>
+
+  <p>
+    2017년 6월 29일에 캡쳐한 위키트리의 모습이다.
+    다양한 jquery 파일을 다양한 버전으로 가져다 쓰고있다.
+    이 놀라운 코드를 보고 배운 것을 기반으로 러시안 룰렛을 구현해봤다.
+  </p>
+
+  <button type="button" id="btn-trigger" class="pure-button pure-button-primary pure-button-xlarge" disabled>Trigger</button>
+
+  <p id="trigger-result">
+    Waiting...
+  </p>
+
+  <p>New game : Refresh page (F5)</p>
+
+  <p>
+    다음과 같은 상황을 상상해보자.
+    같은 이름의 함수가 정의된 여러 개의 자바스크립트 파일이 있다.
+    이 파일을 비동기로 로딩한다.
+    그리고 함수를 호출한다면 어떤 것이 호출될까?
+    어떤것이 호출될지는 아무도 모른다.
+  </p>
+
+  <footer>
+    <a href="//github.com/if1live/async-russian-roulette">repository</a>
+  </footer>
+
+
+  <script src="./main.js"></script>
+  <script async src="./slot-1.js"></script>
+  <script async src="./slot-2.js"></script>
+  <script async src="./slot-3.js"></script>
+  <script async src="./slot-4.js"></script>
+  <script async src="./slot-5.js"></script>
+  <script async src="./slot-6.js"></script>
+</body>
+
+</html>
