@@ -41,8 +41,8 @@ document.querySelector('#btn-trigger').onclick = function() {
 
   this.disabled = true;
 
-  var msg = '';
-  msg += 'slot ' + result.num + ' is triggered.<br/>';
+  var msg += 'slot ' + result.num + ' is triggered.<br/>';
+
   if(result.fired) {
     msg += "<strong>Bang.</strong>"
   } else {
