@@ -14,7 +14,7 @@ setTimeout(function() {
   }
   window.trigger = trigger;
   console.log('slot ${num} registered.')
-}, 3000);
+}, Math.random() * 3000);
 // generated - end
   `;
 }
