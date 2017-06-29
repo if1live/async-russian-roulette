@@ -19,7 +19,7 @@ setTimeout(function() {
   `;
 }
 
-var dummy = fs.readFileSync('jquery-3.2.1.min.js', 'utf8');
+var dummy = fs.readFileSync('dummy.js', 'utf8');
 
 var total = 6;
 var target = 5;
